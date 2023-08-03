@@ -1,0 +1,330 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+header .logo {
+    width: 100px;
+    height:auto;
+    border-radius: 50px;
+}
+
+nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Header Link Styles */
+nav a {
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+/* Special Link in Center */
+nav a.special-link {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Section Styles HOME */
+section {
+    padding: 40px;
+}
+
+.Welcome {
+    display: flex;
+    justify-content: center;
+    font-style: oblique;
+}
+
+/*main*/
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* Form Styles */
+.form-container {
+    flex: 1;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f5e7df; /* Coklat krem */
+    padding: 20px;
+    border: 1px solid #d7b9a8; /* Warna garis pinggir */
+    border-radius: 8px; /* Tambahkan sudut melengkung */
+  }
+  
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-container input,
+  .form-container textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-container input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .form-container input[type="submit"]:hover {
+    background-color: #555;
+  }
+
+/* Slideshow Container Styles */
+.slideshow-container {
+    display: flex;
+    flex: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Slide Styles */
+.slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    /* Header Styles for Smaller Screens */
+    header {
+        padding: 10px;
+    }
+
+    header .logo {
+        font-size: 20px;
+    }
+
+    /* Link Styles for Smaller Screens */
+    nav a {
+        margin-left: 10px;
+    }
+
+    .welcome {
+        font-size: 75%;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+    /* from style for smaller screen*/
+    .form-container {
+        max-width: 100%;
+    }
+
+    /* Slideshow Container Styles for Smaller Screens */
+    .slideshow-container {
+        max-width: 90%;
+    }
+
+    /* Add more styles for other elements as needed */
+}
+
+@media only screen and (max-width: 576px) {
+    /* Header Styles for Even Smaller Screens (HP) */
+    header .logo {
+        font-size: 18px;
+    }
+
+    /* Link Styles for Even Smaller Screens (HP) */
+    nav a {
+        margin-left: 5px;
+    }
+
+    .welcome {
+        font-size: 50%;
+    }
+    
+    /* from style for Even Smaller Screens (HP) */
+    .form-container {
+        max-width: 100%;
+    }
+
+    /* Slideshow Container Styles for Even Smaller Screens (HP) */
+    .slideshow-container {
+        max-width: 95%;
+    }
+
+    /* Add more styles for other elements as needed */
+}
+.destinations {
+    display:flex; flex: 0 0 30%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #d7b9a8;
+    border-radius: 8px;
+    color:antiquewhite;
+    background-position: center;
+    background-size: cover;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.destination h3 {
+    text-align: center;
+    
+}
+
+.destination p {
+    text-align: center;
+
+}
+.destination1 {
+    background-image: url(assets/SA-1.jpeg);
+}
+.destination2 {
+    background-image: url(assets/BELGIA-1.jpeg);
+}
+.destination3 {
+    background-image: url(assets/COLOMB-1.jpeg);
+}
+.destination4 {
+    background-image: url(assets/DUTCH-1.jpeg);
+}
+.destination5 {
+    background-image: url(assets/JERMAN-1.jpeg);
+}
+.destination6 {
+    background-image: url(assets/USA-1.jpeg);
+}
+.destination7 {
+    background-image: url(assets/Singapore.jpeg);
+}
+.destination8 {
+    background-image: url(assets/Singapore.jpeg);
+}
+.destination9 {
+    background-image: url(assets/RUSSIA.jpeg);
+}
+/*animasi gambar*/
+@keyframes moveBackground {
+    from {
+        background-position: center;
+    }
+    to {
+        background-position: bottom;
+    }
+}
+
+/*apply movement ke gambar destinasi*/
+.destination1:hover {
+    animation: moveBackground 5s linear infinite;
+}
+.destination2:hover {
+    animation: moveBackground 5s linear infinite;
+}
+.destination3:hover {
+    animation: moveBackground 5s linear infinite;
+}
+.destination4:hover {
+    animation: moveBackground 5s linear infinite;
+}
+.destination5:hover {
+    animation: moveBackground 5s linear infinite;
+}
+.destination6:hover {
+    animation: moveBackground 5s linear infinite;
+}
+.destination7:hover {
+    animation: moveBackground 5s linear infinite;
+}
+.destination8:hover {
+    animation: moveBackground 5s linear infinite;
+}
+.destination9:hover {
+    animation: moveBackground 5s linear infinite;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .footer-logo {
+    font-size: 24px;
+}
+
+/* Footer Link Styles */
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Additional Styles for Footer */
+footer p {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Responsive Footer Styles */
+@media only screen and (max-width: 768px) {
+    footer .footer-logo {
+        font-size: 20px;
+    }
+
+    /* Add more styles for other elements as needed */
+}
+
+@media only screen and (max-width: 576px) {
+    footer .footer-logo {
+        font-size: 18px;
+    }
+
+    /* Add more styles for other elements as needed */
+}
+
